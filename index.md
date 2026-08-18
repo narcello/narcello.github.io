@@ -2,8 +2,6 @@
 title: Home
 ---
 
-# Marcello Victor
-
 Notes from things I build, break, learn, and hopefully remember later.
 
 ---
