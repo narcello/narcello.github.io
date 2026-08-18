@@ -4,7 +4,7 @@
   </header>
 </article>
 
-# Step into the AWS after years postponing this action
+# No Country for Old Firebase Projects — My Unexpected Journey into AWS
 
 Recently I created an simple and static page for a local lawer here called Beatriz Maia, aka my wife. Hosted in cloudflare, all good, working fine. Until I decided to move it to the AWS and start this Odissey. How and why this whole time, in 10 years, I procastinate so long to dive into this thing. idk.
 
