@@ -1,3 +1,7 @@
+---
+title: No Country for Old Firebase Projects — My Unexpected Journey into AWS
+---
+
 <article class="blog-post">
   <header>
     <h1>narcello.github.io</h1>
