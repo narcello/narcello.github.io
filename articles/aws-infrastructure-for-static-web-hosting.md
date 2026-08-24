@@ -1,8 +1,8 @@
 ---
-title: No Country for Old Firebase Projects — My Unexpected Journey into AWS
+title: AWS Infrastructure for Static Web Hosting
 ---
 
-# No Country for Old Firebase Projects — My Unexpected Journey into AWS
+# AWS Infrastructure for Static Web Hosting
 
 Recently I created an simple and static page for a local lawer here called Beatriz Maia, aka my wife. Hosted in cloudflare, all good, working fine. Until I decided to move it to the AWS and start this Odissey. How and why this whole time, in 10 years, I procastinate so long to dive into this thing. idk.
 

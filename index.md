@@ -8,16 +8,16 @@ Notes from things I build, break, learn, and hopefully remember later.
 
 ## Latest posts
 
-### [No Country for Old Firebase Projects — My Unexpected Journey into AWS(WIP)](articles/no-country-for-old-firebase-projects.html)
+### [AWS Infrastructure for Static Web Hosting (WIP)](articles/aws-infrastructure-for-static-web-hosting.html)
 
-My first adventure through AWS, from hosting a static website to discovering just how many services one simple idea can collect.
+Migrating a static website to AWS while exploring the infrastructure, networking, security, authentication, data storage, and serverless services required to support it.
 
 ---
 
 ## Coming soon
 
-### Everything Everywhere All at Once — Inside the JavaScript and Node Event Loop
+### JavaScript and Node.js Event Loops
 
-### Anatomy of a Payment — What Really Happens After You Click Pay
+### Wire Payment Processing
 
-### Marriage Story — React Reconciliation and How React Decides What Changes
+### React Reconciliation
