@@ -86,6 +86,34 @@ Storage, where you put your build folder, images, index, html, your page is ther
 
 > “Amazon Simple Storage Service (Amazon S3) is an object storage service that offers industry-leading scalability, data availability, security, and performance.” — [AWS documentation](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html)
 
+The last point is subtle but important. Once two systems can write to the same bucket, object ownership must be explicit. The deployment script owns the static build; the testimonial Lambda owns the published testimonial file. Treating those as separate artifacts prevents a routine website release from deleting current content.
+
+The deployment command enforces this boundary by excluding the Lambda-owned object. The exclusion also protects the file when `--delete` removes objects that are not present in the local build:
+
+```bash
+aws s3 sync ./build "s3://${WEBSITE_BUCKET}" \
+  --delete \
+  --exclude "testimonials.json"
+```
+
+The Lambda execution role is restricted to publishing that single object instead of receiving write access to the entire website bucket:
+
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "PublishTestimonials",
+      "Effect": "Allow",
+      "Action": "s3:PutObject",
+      "Resource": "arn:aws:s3:::example-website-bucket/testimonials.json"
+    }
+  ]
+}
+```
+
+`example-website-bucket` must be replaced with the actual bucket name. Together, the deployment exclusion and the key-scoped IAM policy make ownership explicit in both directions: deployments cannot delete `testimonials.json`, and the Lambda cannot overwrite static website files.
+
 ## WAF
 
 **My definition:**
