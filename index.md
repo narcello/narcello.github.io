@@ -21,3 +21,9 @@ Migrating a static website to AWS while exploring the infrastructure, networking
 ### Wire Payment Processing
 
 ### React Reconciliation
+
+### Local State, Zustand, and the Context API
+
+### Monoliths, Microservices, and Serverless Architectures
+
+### SQL, NoSQL, and Other Database Models: When to Use Each
